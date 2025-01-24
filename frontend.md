@@ -22,5 +22,4 @@ How to start your project
 
 ```bash
 cd JAVASCRIPT-TEST
-npm some-command-to-run
 ```
