@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js" defer></script>
+    <title>Tablero Kanban</title>
+</head>
+<body>
+    <h1>TABLERO KANBAN</h1>
+    <header>
+        <h2>Agregar Tarea</h2>
+        <form id="form">
+            <label for="title">Título</label><br>
+            <input id="title" type="text" placeholder="Agregue un título..." required>
+            <br><br>
+            <label for="desc">Descripción</label><br>
+            <input id="desc" type="text" placeholder="Agregue una descripción..." required>
+            <br><br>
+            <label for="img">Imagen</label><br>
+            <input type="file" id="img">
+            <br><br>
+            <label for="startDate">Fecha de inicio</label><br>
+            <input type="date" id="startDate" required>
+            <br><br>
+            <label for="finishDate"  >Fecha de finalización</label><br>
+            <input type="date" id="finishDate" required>
+            <br><br>
+            <label for="col">Columna</label><br>
+            <input type="radio" name="col" id="col" value="to-do" required> Pendientes
+            <input type="radio" name="col" id="col" value="doing" required> En Progreso
+            <input type="radio" name="col" id="col" value="done" required> Completadas
+            <br><br>
+            <button type="submit" id="add">Crear Tarea</button>
+        </form>
+    </header>
+    <div class="container">
+        <div class="column">
+            <h1>PENDIENTES</h1>
+            <ul class="list" id="to-do"></ul>
+        </div>
+        <div class="column">
+            <h1>EN PROGRESO</h1>
+            <ul class="list" id="doing"></ul>
+        </div>
+        <div  class="column">
+            <h1>COMPLETADAS</h1>
+            <ul class="list" id="done"></ul>
+        </div>
+    </div>
+</body>
+</html>
