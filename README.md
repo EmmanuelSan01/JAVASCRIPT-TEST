@@ -10,7 +10,7 @@ La agencia de eventos "Momentum" requiere una aplicación web para gestionar tar
 
 <h3>Cloning</h3>
 
-How to clone your project
+How to clone the project
 
 ```bash
 git clone https://github.com/EmmanuelSan01/JAVASCRIPT-TEST.git
@@ -18,7 +18,7 @@ git clone https://github.com/EmmanuelSan01/JAVASCRIPT-TEST.git
 
 <h3>Starting</h3>
 
-How to start your project
+How to start the project
 
 ```bash
 cd JAVASCRIPT-TEST
