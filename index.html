@@ -19,7 +19,7 @@
             <input id="desc" type="text" placeholder="Agregue una descripción..." required>
             <br><br>
             <label for="img">Imagen</label><br>
-            <input type="file" id="img">
+            <input type="file" id="img" accept="image/png, image/jpeg">
             <br><br>
             <label for="startDate">Fecha de inicio</label><br>
             <input type="date" id="startDate" required>
@@ -28,9 +28,11 @@
             <input type="date" id="finishDate" required>
             <br><br>
             <label for="col">Columna</label><br>
-            <input type="radio" name="col" id="col" value="to-do" required> Pendientes
-            <input type="radio" name="col" id="col" value="doing" required> En Progreso
-            <input type="radio" name="col" id="col" value="done" required> Completadas
+            <select id="col">
+                <option value="to-do">Pendientes</option>
+                <option value="doing">En Progreso</option>
+                <option value="done">Completadas</option>
+            </select>
             <br><br>
             <button type="submit" id="add">Crear Tarea</button>
         </form>

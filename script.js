@@ -4,7 +4,7 @@ const doing = document.getElementById("doing");
 const done = document.getElementById("done");
 
 const title = document.getElementById("title");
-const input = document.getElementById("desc");
+const desc = document.getElementById("desc");
 const startDate = document.getElementById("startDate");
 const finishDate = document.getElementById("finishDate");
 const col = document.getElementById("col");
@@ -12,12 +12,11 @@ const col = document.getElementById("col");
 loadTasks();
 
 function addTask() {
-  
-  const task = input.value.trim();
+  const task = title.value.trim();
 
   if (task) {
     createTaskElement(task);
-    input.value = "";
+    title.value = "";
     saveTasks();
   } else {
     alert("Agregue una descripción");
@@ -34,7 +33,7 @@ function createTaskElement(task) {
   const moveForward = document.createElement("button");
   const moveBack = document.createElement("button");
 
-  taskText.textContent = task;
+  taskText.textContent = ("Título:" + task + "descripción:" + desc.value.trim() + "Fecha de inicio:" + startDate.value.trim() + "Fecha de fin:" + finishDate.value.trim());
   listItem.appendChild(taskText);
 
   function showButtons () {
@@ -61,7 +60,8 @@ function createTaskElement(task) {
   } else if (colName === "done") {
     done.appendChild(listItem);
   }
-
+  
+  saveTasks();
   showButtons();
 
   moveForward.addEventListener("click", function () {

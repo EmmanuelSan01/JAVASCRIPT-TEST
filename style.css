@@ -54,6 +54,11 @@ li div {
   gap: 0.5em;
 }
 
+p {
+  width: 60%;
+  word-wrap: break-word;
+}
+
 .button {
   display: flex;
   justify-content: center;
